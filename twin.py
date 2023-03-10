@@ -8,9 +8,10 @@ def is_prime(n):
 
 def generate_twins(start, end):
    for i in range(start, end):
-      j = i + 2
-      if(is_prime(i) and is_prime(j)):
-         print("{:d} and {:d}".format(i, j))
+      if(i%2==1):
+        j = i + 2
+        if(is_prime(i) and is_prime(j)):
+           print("{:d} and {:d}".format(i, j))
 
 generate_twins(2, num)
 
